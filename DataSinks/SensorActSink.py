@@ -25,6 +25,7 @@ class SensorActSink(DataSink):
     def registerDevice(self, devicename, config):
         """ Registers a device to the service with the device's name (i.e. Eaton). """
         self.registerer.registerDevice(devicename, config)
+        #pass    uncomment if you want to stop registering SensorAct devices
 
     def getSensorName(self, channel_name):
         sensor_name = ""
